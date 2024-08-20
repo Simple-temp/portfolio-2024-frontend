@@ -43,10 +43,10 @@ function Sidebar() {
           <hr/>
           <div className="list-3">
             <ul>
-            <Link to="/admin/services" className="link"><li> <ViewListIcon className="sidebar-icon" /> Custom Order</li></Link>
-            <Link to="/admin/portfolio" className="link"><li> <CircleNotificationsIcon className="sidebar-icon" /> Notification</li></Link>
-            <Link to="/admin/messages" className="link"><li> <NetworkPingIcon className="sidebar-icon" /> Work done</li></Link>
-            <Link to="/admin/footer" className="link"><li> <EmailIcon className="sidebar-icon" /> Users Mail</li></Link>
+            <Link to="/admin/customorder" className="link"><li> <ViewListIcon className="sidebar-icon" /> Custom Order</li></Link>
+            <Link to="/admin/notification" className="link"><li> <CircleNotificationsIcon className="sidebar-icon" /> Notification</li></Link>
+            <Link to="/admin/workdone" className="link"><li> <NetworkPingIcon className="sidebar-icon" /> Work done</li></Link>
+            <Link to="/admin/usersmail" className="link"><li> <EmailIcon className="sidebar-icon" /> Users Mail</li></Link>
             </ul>
           </div>
         </div>
