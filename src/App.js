@@ -13,6 +13,7 @@ import AdminCustomOrder from "./AdminPages/CustomOrders/CustomOrder";
 import AdminNotification from "./AdminPages/Notification/Notification";
 import AdminWorkDone from "./AdminPages/WorkDone/WorkDone";
 import AdminUserMail from "./AdminPages/UsersMail/UserMail";
+import Sidebar from "./Components/Sidebar/Sidebar";
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
 
           {/* This is Normal Routes */}
 
-          <Route path="/" element={<Home/>} />
+          <Route path="/" element={<Sidebar/>} />
 
           {/* This is Admin Routes */}
 

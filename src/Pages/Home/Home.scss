@@ -1,4 +1,26 @@
 .home{
-    display: flex;
-    background-color: #0008f2;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0%;
+    left: 0%;
+    background-color: #000000df;
+    color: aliceblue;
+    padding-bottom:50px;
+
+    .inner-left{
+
+        .home-img{
+
+            .home-profile{
+                width: 300px;
+                height: 380px;
+                border: 1px solid #fff;
+                object-fit: cover;
+            }
+
+        }
+
+    }
+
 }
