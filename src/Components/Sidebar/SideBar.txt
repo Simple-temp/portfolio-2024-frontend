@@ -1,0 +1,23 @@
+            const [toggle, setToggle] = useState(true);
+
+            const toggleIcon = () => {
+              setToggle(!toggle);
+            };
+          
+          
+          
+          {/* <div className="side-bar-container">
+            <div className={toggle ? "toggle toggle-icon my-img" : "sidebar"}>
+              <div className="toggle-icon" onClick={() => toggleIcon()}>
+                {toggle ? (
+                  <KeyboardDoubleArrowRightIcon />
+                ) : (
+                  <KeyboardDoubleArrowLeftIcon />
+                )}
+              </div>
+              <Profile toggle={toggle} />
+            </div>
+            <div className="home-container">
+              <Home />
+            </div>
+          </div> */}
