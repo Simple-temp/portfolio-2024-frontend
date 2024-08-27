@@ -1,14 +1,10 @@
 import React, { useState } from "react";
 import "./Sidebar.scss";
 import Home from "../../Pages/Home/Home";
-import Profile from "../Profile/Profile";
 import { useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
-import MailIcon from "@mui/icons-material/Mail";
 import Toolbar from "@mui/material/Toolbar";
 import CssBaseline from "@mui/material/CssBaseline";
-import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
