@@ -12,14 +12,22 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 60vh;
+        height:70vh;
         width: 100%;
+        display: block;
         background-attachment: scroll;
         position: relative;
     }
+
+    @media (max-width:768px) {
+        .home-container{
+            height: 125vh;
+            display: block;
+        }
+    }
 }
 .about-section{
-    height: 100vh;
+    height: auto;
     width: 100%;
     display: block;
 

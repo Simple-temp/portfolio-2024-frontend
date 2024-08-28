@@ -29,6 +29,9 @@ import About from "../../Pages/About/About";
 import Services from "../../Pages/Services/Services";
 import Portfolio from "../../Pages/Portfolio/Portfolio";
 import Contact from "../../Pages/Contact/Contact";
+import { Container, Row } from "react-bootstrap";
+import VerticalAlignBottomIcon from '@mui/icons-material/VerticalAlignBottom';
+import Footer from "../../Pages/Footer/Footer";
 
 const pages = [
   { name: "Home", icon: <HomeIcon />, id: "home-section" },
@@ -36,6 +39,7 @@ const pages = [
   { name: "Services", icon: <WorkIcon />, id: "services-section" },
   { name: "Portfolio", icon: <FolderIcon />, id: "portfolio-section" },
   { name: "Contact", icon: <ContactMailIcon />, id: "contact-section" },
+  { name: "Footer", icon: <VerticalAlignBottomIcon />, id: "footer-section" },
 ];
 
 const Sidebar = () => {
@@ -62,99 +66,104 @@ const Sidebar = () => {
 
   return (
     <>
-      <Box sx={{ display: "flex" }}>
-        <CssBaseline />
-        <AppBar position="fixed" open={open} className="appbar">
-          <Toolbar>
-            <IconButton
-              color="inherit"
-              aria-label="open drawer"
-              onClick={handleDrawerOpen}
-              edge="start"
-              sx={[
-                {
-                  marginRight: 5,
-                },
-                open && { display: "none" },
-              ]}
-            >
-              <MenuIcon />
-            </IconButton>
-          </Toolbar>
-        </AppBar>
-        <Drawer variant="permanent" open={open} className="drawer">
-          <DrawerHeader>
-            <IconButton onClick={handleDrawerClose}>
-              {theme.direction === "rtl" ? (
-                <ChevronRightIcon />
-              ) : (
-                <ChevronLeftIcon />
-              )}
-            </IconButton>
-          </DrawerHeader>
-          <Divider />
-          <List>
-            {pages.map((page) => (
-              <ListItem
-                key={page.name}
-                disablePadding
-                sx={{ display: "block" }}
+      <Row>
+        <Box sx={{ display: "flex" }}>
+          <CssBaseline />
+          <AppBar position="fixed" open={open} className="appbar">
+            <Toolbar>
+              <IconButton
+                color="inherit"
+                aria-label="open drawer"
+                onClick={handleDrawerOpen}
+                edge="start"
+                sx={[
+                  {
+                    marginRight: 5,
+                  },
+                  open && { display: "none" },
+                ]}
               >
-                <ListItemButton
-                  onClick={() => handleScroll(page.id)}
-                  sx={[
-                    { minHeight: 48, px: 2.5 },
-                    open
-                      ? { justifyContent: "initial" }
-                      : { justifyContent: "center" },
-                    activePage === page.id
-                      ? { backgroundColor: "#e0f7fa", color: "#00796b" }
-                      : {},
-                  ]}
+                <MenuIcon />
+              </IconButton>
+            </Toolbar>
+          </AppBar>
+          <Drawer variant="permanent" open={open} className="drawer">
+            <DrawerHeader>
+              <IconButton onClick={handleDrawerClose}>
+                {theme.direction === "rtl" ? (
+                  <ChevronRightIcon />
+                ) : (
+                  <ChevronLeftIcon />
+                )}
+              </IconButton>
+            </DrawerHeader>
+            <Divider />
+            <List>
+              {pages.map((page) => (
+                <ListItem
+                  key={page.name}
+                  disablePadding
+                  sx={{ display: "block" }}
                 >
-                  <ListItemIcon
+                  <ListItemButton
+                    onClick={() => handleScroll(page.id)}
                     sx={[
-                      { minWidth: 0, justifyContent: "center" },
-                      open ? { mr: 3 } : { mr: "auto" },
-                      activePage === page.id ? { color: "#00796b" } : {},
+                      { minHeight: 48, px: 2.5 },
+                      open
+                        ? { justifyContent: "initial" }
+                        : { justifyContent: "center" },
+                      activePage === page.id
+                        ? { backgroundColor: "#e0f7fa", color: "#00796b" }
+                        : {},
                     ]}
                   >
-                    {page.icon}
-                  </ListItemIcon>
-                  <ListItemText
-                    primary={page.name}
-                    sx={[
-                      open ? { opacity: 1 } : { opacity: 0 },
-                      activePage === page.id ? { color: "#00796b" } : {},
-                    ]}
-                  />
-                </ListItemButton>
-              </ListItem>
-            ))}
-          </List>
-          <Divider />
-        </Drawer>
-        <Box component="main" sx={{ flexGrow: 1,}}>
-          <DrawerHeader />
-          <div className="side-bar-container" id="home-section">
-            <div className="home-container">
-              <Home />
+                    <ListItemIcon
+                      sx={[
+                        { minWidth: 0, justifyContent: "center" },
+                        open ? { mr: 3 } : { mr: "auto" },
+                        activePage === page.id ? { color: "#00796b" } : {},
+                      ]}
+                    >
+                      {page.icon}
+                    </ListItemIcon>
+                    <ListItemText
+                      primary={page.name}
+                      sx={[
+                        open ? { opacity: 1 } : { opacity: 0 },
+                        activePage === page.id ? { color: "#00796b" } : {},
+                      ]}
+                    />
+                  </ListItemButton>
+                </ListItem>
+              ))}
+            </List>
+            <Divider />
+          </Drawer>
+          <Box component="main" sx={{ flexGrow: 1 }}>
+            <DrawerHeader />
+            <div className="side-bar-container" id="home-section">
+              <div className="home-container">
+                <Home />
+              </div>
             </div>
-          </div>
-          <div className="about-section pt-5 mt-5" id="about-section">
-            <About/>
-          </div>
-          <div className="about-section" id="services-section">
-            <Services/>
-          </div>
-          <div className="about-section" id="portfolio-section">
-            <Portfolio/>
-          </div>
-          <div className="about-section" id="contact-section">
-            <Contact/>
-          </div>
+            <div className="about-section" id="about-section">
+              <About />
+            </div>
+            <div className="services-section" id="services-section">
+              <Services />
+            </div>
+            <div className="portfolio-section" id="portfolio-section">
+              <Portfolio />
+            </div>
+            <div className="contact-section" id="contact-section">
+              <Contact />
+            </div>
+            <div className="footer-section" id="footer-section">
+              <Footer/>
+            </div>
+          </Box>
         </Box>
-      </Box>
+      </Row>
     </>
   );
 };
