@@ -14,16 +14,24 @@ import AdminWorkDone from "./AdminPages/WorkDone/WorkDone";
 import AdminUserMail from "./AdminPages/UsersMail/UserMail";
 import Home from "./Pages/Home/Home";
 import Navbar from "./Components/Navbar/Navbar";
+import About from "./Pages/About/About";
+import Portfolio from "./Pages/Portfolio/Portfolio";
+import Contact from "./Pages/Contact/Contact";
+import Themes from "./Components/Themes/Themes";
 
 function App() {
   return (
     <BrowserRouter>
       <div className="">
         <Navbar />
+        <Themes/>
         <Routes>
           {/* This is Normal Routes */}
 
           <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/contact" element={<Contact />} />
           {/* This is Admin Routes */}
 
           <Route path="/admin/dashboard" element={<Dashboard />} />

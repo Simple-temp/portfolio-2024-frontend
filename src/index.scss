@@ -1,0 +1,293 @@
+/* ===================== GOOGLE FONTS ===================== */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@100;400;500;600;700;800&display=swap');
+
+/* ===================== CSS variabls ===================== */
+
+:root{
+  /* ===================== Color ===================== */
+  /* ===================== Color Mode HUL (Hue, Saturation, Lightness) ===================== */
+
+  --primary-color : hsl(271, 76%, 53%);
+  --title-color : hsl(0, 0%, 40%);
+  --text-color : hsl(0,0%, 50%);
+  --body-color : hsl(0, 0%, 100%);
+  --container-color : hsl(0, 0%, 93%);
+  --border-color : hsl(0, 0%, 87%);
+  --text-white : #fff;
+  --normal-text-color : hsl(0, 0%, 0%);
+
+  /* ===================== Font And Typhography ===================== */
+
+  --body-font : "Open Sans", sans-serif;
+  --second-font : "Poppins", sans-serif;
+  --big-font-size : 56px;
+  --h1-font-size : 50px;
+  --h2-font-size : 32px;
+  --h3-font-size : 24px;  
+  --large-font-size : 18px;
+  --normal-font-size : 16px;
+  --small-font-size : 15px;
+  --smaller-font-size : 14px;
+  --tiny-font-size : 12px;
+
+  /* ===================== Font weight ===================== */
+  --font-weight-400 : 400;
+  --font-weight-500 : 500;
+  --font-weight-600 : 600;
+  --font-weight-700 : 700;
+  --font-weight-800 : 800;
+
+}
+
+.dark-theme{
+  --title-color : hsl(0, 0%, 100%);
+  --text-color : hsl(0, 0%, 80%);
+  --body-color : hsl(0, 0%, 7%);
+  --container-color : hsl(0, 1%, 17%);
+  --border-color : hsl(0, 0%, 15%);
+  --normal-text-color : hsl(0, 0%, 92%);
+}
+
+/* ===================== Responsive typhography ===================== */
+
+@media screen and (max-width:1200px) {
+  :root{
+    --big-font-size : 36px;
+    --h1-font-size : 32px;
+    --h2-font-size : 24px;
+    --h3-font-size : 20px;  
+    --large-font-size : 16px;
+    --normal-font-size : 15px;
+    --small-font-size : 14px;
+    --smaller-font-size : 13px;
+    --tiny-font-size : 11px;
+  }
+}
+
+/* ===================== Base ===================== */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+input,
+textarea{
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-weight-500);
+}
+           
+body{
+  background-color: var(--body-color) !important;
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4{
+  color: var(--title-color);
+  font-family: var(--second-font);
+  font-weight: var(--font-weight-700);
+}
+
+ul{
+  list-style: none;
+}
+
+a, .link{
+  text-decoration: none;
+}
+
+button,
+input,
+textarea{
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+img{
+  max-width: 100%;
+}
+
+/* ===================== Reusable CSS ===================== */
+
+.container{
+  max-width: 1140px;
+  margin-inline:auto;
+  padding-inline:15px;
+}
+
+.grid{
+  display: grid;
+  gap:30px
+}
+
+.section{
+  padding-block:70px;
+}
+
+.section__title{
+  font-size: var(--big-font-size);
+  font-weight: var(--font-weight-800);
+  text-align: center;
+  margin-bottom: 70px;
+  color:var(--normal-text-color);
+}
+
+.section__title span{
+  color: var(--primary-color);
+}
+
+.button{
+  display: inline-block;
+  color: var(--title-color);
+  border: 1px solid var(--primary-color);
+  padding: 15px 70px 15px 35px;
+  border-radius: 35px;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  -ms-border-radius: 35px;
+  -o-border-radius: 35px;
+  font-family: var(--second-font);
+  font-size: var(--small-font-size);
+  font-weight: var(--font-weight-500);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+}
+
+.button:hover{
+  color: var(--text-white);
+}
+
+.button::before{
+  content: "";
+  position: absolute;
+  inset:0;
+  background-color: var(--primary-color);
+  transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  z-index: -1;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+}
+
+.button:hover::before{
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+}
+
+.button__icon{
+  background-color: var(--primary-color);
+  position: absolute;
+  inset-block: -2px;
+  right: 0;
+  width: 55px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  color: var(--text-white);
+  font-size: var(--large-font-size);
+  text-align: center;
+  line-height: 60px;
+}
+
+
+/* ===================== Responsive Code ===================== */
+
+@media screen and (max-width:1400px) {
+  .container{
+    max-width: calc(100% - 180px);
+  }
+}
+
+@media screen and (max-width:1400px) {
+  .grid{
+    gap:20px;
+  }
+  .home__data{
+    padding-right: 40px;
+  }
+
+  .home__title{
+    font-size: var(--big-font-size);
+  }
+
+  .home__description{
+    font-size: var(--small-font-size);
+  }
+  .stats__title{
+    padding-left: 35px;
+  }
+
+  .stats__title::before{
+    width: 22px;
+  }
+
+  .skills__container{
+    row-gap: 32px;
+  }
+
+  .progress__circle{
+    width: 100px;
+    height: 100px;
+  }
+
+  .skills__title{
+    margin-top: 20px;
+  }
+
+  .resume__icon{
+    width: 36px;
+    height: 36px;
+    line-height: 38px;
+  }
+
+  .resume__item{
+    padding-left: 55px;
+  }
+
+  .portfolio__modal-content{
+    max-width: 600px;
+  }
+
+  .modal__close{
+    width: 40px;
+    height: 40px;
+  }
+
+  .form__input-group{
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 24px;
+  }
+  .form__input-group .form__input-div:last-child{
+    grid-column: 1/-1;
+  }
+  .form__input-div{
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (max-width:1024px) {
+
+}

@@ -9,23 +9,23 @@ import {
 } from 'react-icons/fa';
 import { FiFileText, FiUser, FiExternalLink } from 'react-icons/fi';
 
-import Work1 from './assets/project-1.jpeg';
-import Work2 from './assets/project-2.jpg';
-import Work3 from './assets/project-3.jpeg';
-import Work4 from './assets/project-4.jpeg';
-import Work5 from './assets/project-5.jpg';
-import Work6 from './assets/project-6.jpg';
+import Work1 from './img/project-2.jpg';
+import Work2 from './img/project-2.jpg';
+import Work3 from './img/project-3.jpeg';
+import Work4 from './img/project-4.jpeg';
+import Work5 from './img/project-5.jpg';
+import Work6 from './img/project-6.jpg';
 
-import Theme1 from './assets/purple.png';
-import Theme2 from './assets/red.png';
-import Theme3 from './assets/blueviolet.png';
-import Theme4 from './assets/blue.png';
-import Theme5 from './assets/goldenrod.png';
-import Theme6 from './assets/magenta.png';
-import Theme7 from './assets/yellowgreen.png';
-import Theme8 from './assets/orange.png';
-import Theme9 from './assets/green.png';
-import Theme10 from './assets/yellow.png';
+import Theme1 from './img/purple.png';
+import Theme2 from './img/red.png';
+import Theme3 from './img/blueviolet.png';
+import Theme4 from './img/blue.png';
+import Theme5 from './img/goldenrod.png';
+import Theme6 from './img/magenta.png';
+import Theme7 from './img/yellowgreen.png';
+import Theme8 from './img/orange.png';
+import Theme9 from './img/green.png';
+import Theme10 from './img/yellow.png';
 
 export const links = [
   {

@@ -1,12 +1,37 @@
-import React from 'react'
-import "./Navbar"
+import React, { useState } from "react";
+import "./Navbar.scss";
+import { links } from "../../data";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
+
+  const [showMenu, setShowMenu] = useState(false)
+
   return (
-    <div className='navbar'>
-        Navbar
-    </div>
-  )
+    <div className="navbar">
+      <nav className="nav">
+        <div className={`${showMenu ? "nav__menu show-menu" : "nav__menu"}`}>
+          <ul className="nav__list">
+            {links.map(({name, icon, path}, index) => {
+              return (
+                <li className="nav__item" key={index}>
+                  <NavLink to={path} className={({isActive}) => isActive ? "nav__link active-nav" : "nav__link"} onClick={()=> setShowMenu(!showMenu)}>
+                    {icon}
+                    <h3 className="nav__name">{name}</h3>
+                  </NavLink>
+                </li>
+              )
+            })}
+          </ul>
+        </div>
+        <div className={`${showMenu ? "nav__toggle animation-toggle" : "nav__toggle"}`} onClick={()=> setShowMenu(!showMenu)}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </div> 
+  );
 }
 
-export default Navbar
+export default Navbar;
