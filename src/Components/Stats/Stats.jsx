@@ -1,5 +1,4 @@
 import React from 'react';
-import "./Stats.scss";
 import { stats } from '../../data';
 import parse from "html-react-parser";
 

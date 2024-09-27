@@ -48,8 +48,6 @@
   --normal-text-color : hsl(0, 0%, 92%);
 }
 
-/* ===================== Responsive typhography ===================== */
-
 @media screen and (max-width:1200px) {
   :root{
     --big-font-size : 36px;
@@ -212,16 +210,18 @@ img{
   line-height: 60px;
 }
 
+/* ===================== Responsive typhography ===================== */
+
 
 /* ===================== Responsive Code ===================== */
 
 @media screen and (max-width:1400px) {
   .container{
-    max-width: calc(100% - 180px);
+    max-width: calc(100% - 180px) !important;
   }
 }
 
-@media screen and (max-width:1400px) {
+@media screen and (max-width:1200px) {
   .grid{
     gap:20px;
   }
@@ -241,7 +241,7 @@ img{
   }
 
   .stats__title::before{
-    width: 22px;
+    width: 22px !important;
   }
 
   .skills__container{
@@ -277,7 +277,7 @@ img{
   }
 
   .form__input-group{
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr) !important;
     column-gap: 24px;
   }
   .form__input-group .form__input-div:last-child{
@@ -289,5 +289,178 @@ img{
 }
 
 @media screen and (max-width:1024px) {
+  .container{
+    max-width: 720px !important;
+  }
+  .home{
+    padding: 20px;
+    grid-template-columns: 5fr 7fr !important;
+  }
+  .home__data{
+    padding-right: 0px;
+  }
+  .section{
+    margin-block: 50px;
+  }
+  .section__title{
+    margin-bottom: 40px;
+  }
+  .about__container,
+  .resume__container,
+  .contact__container{
+    grid-template-columns: 1fr !important;
+  }
+  .about__container{
+    row-gap: 40px;
+  }
+  .subtitle__center{
+    margin-bottom: 45px;
+  }
+  .skills__container{
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+  .resume__container{
+    row-gap: 45px;
+  }
+  .resume__item:not(:last-child){
+    margin-bottom: 45px;
+  }
 
+  .separater{
+    margin: 65px auto 50px;
+  }
+
+  .portfolio__container{
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .contact__container{
+    row-gap: 48px !important;
+  }
+
+}
+
+@media screen and (max-width:768px){
+  .home{
+    grid-template-columns: 1fr !important;
+    justify-items: center;
+    row-gap: 10px;
+  }
+  .color__block{
+    display: none;
+  }
+  .home__img{
+    width: 270px !important;
+    height: 270px !important;
+    border-radius: 50% !important;
+    -webkit-border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    -ms-border-radius: 50% !important;
+    -o-border-radius: 50% !important;
+    margin-top: auto;
+  }
+  .home__content{
+    max-width: 500px;
+    text-align: center;
+    margin-bottom: auto;
+  }
+  .home__title{
+    padding-left:0 !important;
+  }
+  .home__title::before{
+    all:unset !important;
+  }
+  .home__title span{
+    display: block !important;
+  }
+  .container{
+    max-width: 540px;
+  }
+  .portfolio__modal-content{
+    padding: 25px 20px;
+  }
+  .modal__close{
+    top:-9%;
+    right:0;
+  }
+}
+
+@media screen and (max-width:576px){
+  .nav__toggle{
+    top:20px;
+    right: 15px;
+  }
+
+  .nav__link{
+    column-gap: 20px;
+  }
+
+  .nav__icon,
+  .nav__name{
+    font-size: var(--h3-font-size);
+  }
+  .skills__container{
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .portfolio__container{
+    grid-template-columns: 1fr !important;
+  }
+  .modal__list{
+    height: 300px;
+  }
+  .form__input-group{
+    grid-template-columns: 1fr !important;
+  }
+  .theme__img{
+    width: 25px;
+  }
+
+  .style__switcher-toggler,
+  .theme__toggler{
+    width: 40px;
+    height: 40px;
+  }
+  .style__switcher-toggler{
+    top:15%;
+  }
+
+  .theme__toggler{
+    bottom: 15%;
+  }
+
+  .style__switcher-close{
+    top:-5%;
+
+ }
+}
+
+@media screen and (max-width:450px){
+  .home__img{
+    display: none;
+  }
+  .home__content{
+    margin-block:auto;
+  }
+  .home__title{
+    font-size: var(--h1-font-size);
+  }
+  .home__description{
+    text-align: justify;
+  }
+  .info__title{
+    display: block;
+    margin-bottom: 4px;
+  }
+  .stats__box{
+    padding: 15px 15px 25px 20px;
+  }
+}
+
+@media screen and (max-width:350px){
+  .home__title span{
+    display: inline;
+  }
+  .stats{
+    grid-template-columns: 1fr !important;
+  }
 }
