@@ -435,9 +435,7 @@ img{
 }
 
 @media screen and (max-width:450px){
-  .home__img{
-    display: none;
-  }
+
   .home__content{
     margin-block:auto;
   }
@@ -457,6 +455,9 @@ img{
 }
 
 @media screen and (max-width:350px){
+  .home__img{
+    display: none;
+  }
   .home__title span{
     display: inline;
   }
