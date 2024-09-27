@@ -12,14 +12,11 @@ function Home() {
       <div className="home__content">
         <div className="home__data">
           <div className="home__title">
-            <span>I'm Steve Miller.</span> Web Designer
+            <span>I'm Md Abdul Aziz.</span> Web Developer
           </div>
 
           <p className="home__description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. A similique
-            quia in libero porro, et ipsam reiciendis, ipsum ea tempore
-            explicabo, illo maiores eligendi blanditiis molestias nisi alias
-            labore soluta.
+          Experienced MERN-stack developer specializing in building dynamic web applications with React, Node.js, MongoDB, and Express. Currently working as a Network Engineer, but focused on advancing my expertise in full-stack development.
           </p>
 
           <Link to="/about" className="button link">

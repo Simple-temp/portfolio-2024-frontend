@@ -9,12 +9,21 @@ import {
 } from 'react-icons/fa';
 import { FiFileText, FiUser, FiExternalLink } from 'react-icons/fi';
 
-import Work1 from './img/project-2.jpg';
-import Work2 from './img/project-2.jpg';
-import Work3 from './img/project-3.jpeg';
-import Work4 from './img/project-4.jpeg';
-import Work5 from './img/project-5.jpg';
-import Work6 from './img/project-6.jpg';
+// import Work1 from './img/project-2.jpg';
+// import Work2 from './img/project-2.jpg';
+// import Work3 from './img/project-3.jpeg';
+// import Work4 from './img/project-4.jpeg';
+// import Work5 from './img/project-5.jpg';
+// import Work6 from './img/project-6.jpg';
+
+import Work1 from './img/p1.png';
+import Work2 from './img/p2.png';
+import Work3 from './img/p3.png';
+import Work4 from './img/p4.png';
+import Work5 from './img/p5.png';
+import Work6 from './img/p6.png';
+import Work7 from './img/p7.png';
+import Work8 from './img/p8.png';
 
 import Theme1 from './img/purple.png';
 import Theme2 from './img/red.png';
@@ -61,88 +70,88 @@ export const personalInfo = [
   {
     id: 1,
     title: 'First Name : ',
-    description: 'Steve',
+    description: 'Md Abdul ',
   },
 
   {
     id: 2,
     title: 'Last Name : ',
-    description: 'Milner',
+    description: 'Aziz',
   },
 
   {
     id: 3,
     title: 'Age : ',
-    description: '27 Years',
+    description: '23 Years',
   },
 
   {
     id: 4,
     title: 'Nationality : ',
-    description: 'Tunisian',
+    description: 'Islam',
   },
 
   {
     id: 5,
     title: 'Freelance : ',
-    description: 'Available',
+    description: 'Not-Available',
   },
 
   {
     id: 6,
     title: 'Address : ',
-    description: 'Tunis',
+    description: 'Bangladesh',
   },
 
   {
     id: 7,
     title: 'Phone : ',
-    description: '+21621184010',
+    description: '+88 01409447002',
   },
 
   {
     id: 8,
     title: 'Email : ',
-    description: 'you@mail.com',
+    description: 'mdaziz227500@gmail.com',
   },
 
   {
     id: 9,
     title: 'Skype : ',
-    description: 'steve.milner',
+    description: 'ariyan aziz',
   },
 
   {
     id: 10,
     title: 'Langages : ',
-    description: 'French, English',
+    description: 'Bengali, English',
   },
 ];
 
 export const stats = [
   {
     id: 1,
-    no: '12+',
+    no: '2+',
     title: 'Years of <br /> Experience',
   },
 
   {
     id: 2,
-    no: '97+',
+    no: '70+',
     title: 'Completed <br /> Projects',
   },
 
-  {
-    id: 3,
-    no: '81+',
-    title: 'Happy <br /> Customers',
-  },
+  // {
+  //   id: 3,
+  //   no: '81+',
+  //   title: 'Happy <br /> Customers',
+  // },
 
-  {
-    id: 4,
-    no: '53+',
-    title: ' Awards <br /> Won',
-  },
+  // {
+  //   id: 4,
+  //   no: '53+',
+  //   title: ' Awards <br /> Won',
+  // },
 ];
 
 export const resume = [
@@ -150,54 +159,54 @@ export const resume = [
     id: 1,
     category: 'experience',
     icon: <FaBriefcase />,
-    year: '2018 - PRESENT',
-    title: 'Web Developer <span> Envato </span>',
-    desc: 'Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit,',
+    year: '2023 - PRESENT',
+    title: 'Network <span> Engineer in AccessTEL </span>',
+    desc: 'Worked as a Network Engineer at AccessTEL, managing network infrastructure, troubleshooting, and optimizing performance.',
   },
 
   {
     id: 2,
     category: 'experience',
     icon: <FaBriefcase />,
-    year: '2013 - 2018',
-    title: 'UI/UX Designer <span> Themeforest </span>',
-    desc: 'Lorem incididunt dolor sit amet, consectetur eiusmod dunt doldunt dol elit, tempor incididunt',
+    year: '2020 - 2022',
+    title: 'MERN-stack Development <span> Learned by Programming-Hero </span>',
+    desc: 'Learned MERN-stack development from 2020-2021 through Programming Hero, mastering HTML, CSS, JavaScript, React, Node and MongoDB.',
   },
 
   {
     id: 3,
     category: 'experience',
     icon: <FaBriefcase />,
-    year: '2005 - 2013',
-    title: 'Consultant <span> Videohive </span>',
-    desc: 'Lorem ipsum dolor sit amet, tempor incididunt ut laboreconsectetur elit, sed do eiusmod tempor duntt',
+    year: '2018 - 2019',
+    title: 'Learn Website <span> Design </span>',
+    desc: 'Learned website design from 2018-2019, gaining skills in UI/UX, coding, and responsive design techniques.',
   },
 
   {
     id: 4,
     category: 'education',
     icon: <FaGraduationCap />,
-    year: '2015',
-    title: 'Engineering Degree <span> Oxford University </span>',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore',
+    year: '2024',
+    title: 'BSC Engineering <span> Northern University </span>',
+    desc: 'Currently pursuing BSc, expected to graduate by 2027/28, focusing on building expertise and practical skills',
   },
 
   {
     id: 5,
     category: 'education',
     icon: <FaGraduationCap />,
-    year: '2012',
-    title: 'Master Degree <span> KIEV University </span>',
-    desc: 'Lorem incididunt dolor sit amet, consectetur eiusmod dunt doldunt dol elit, tempor incididunt',
+    year: '2023',
+    title: 'Diploma <span> Kushtia Polytechnic Institute </span>',
+    desc: 'Completed Diploma in 2023, showcasing technical expertise, hands-on experience, and a dedication to continuous learning',
   },
 
   {
     id: 6,
     category: 'education',
     icon: <FaGraduationCap />,
-    year: '2009',
-    title: 'Bachelor Degree <span> Tunis High School </span>',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ut labore',
+    year: '2018',
+    title: 'SSC <span> Housing High School </span>',
+    desc: 'Completed SSC in 2018, demonstrating strong academic skills, discipline, and a commitment to excellence',
   },
 ];
 
@@ -205,49 +214,67 @@ export const skills = [
   {
     id: 1,
     title: 'Html',
-    percentage: '25',
+    percentage: '90',
   },
 
   {
     id: 2,
     title: 'Javascript',
-    percentage: '89',
+    percentage: '80',
   },
 
   {
     id: 3,
     title: 'Css',
-    percentage: '70',
+    percentage: '80',
   },
 
   {
     id: 4,
-    title: 'Php',
-    percentage: '66',
+    title: 'React',
+    percentage: '85',
   },
 
   {
     id: 5,
     title: 'Wordpress',
-    percentage: '95',
+    percentage: '30',
   },
 
   {
     id: 6,
-    title: 'Jquery',
-    percentage: '50',
+    title: 'React Bootstrap',
+    percentage: '80',
   },
 
   {
     id: 7,
-    title: 'Angular',
-    percentage: '65',
+    title: 'Material UI',
+    percentage: '60',
   },
 
   {
     id: 8,
-    title: 'React',
-    percentage: '45',
+    title: 'Express',
+    percentage: '65',
+  },
+
+  {
+    id: 9,
+    title: 'JWT',
+    percentage: '60',
+  },
+
+  {
+    id: 10,
+    title: 'MongoDB',
+    percentage: '70',
+  },
+
+  {
+    id: 11,
+    title: 'GraphQL',
+    percentage: '65',
   },
 ];
 
@@ -255,27 +282,27 @@ export const portfolio = [
   {
     id: 1,
     img: Work1,
-    title: 'Photo Editing',
+    title: 'Agency',
     details: [
       {
         icon: <FiFileText />,
         title: 'Project : ',
-        desc: 'Photo',
+        desc: 'Agency Website',
       },
       {
         icon: <FiUser />,
-        title: 'Client : ',
-        desc: 'Dribble',
+        title: 'Me : ',
+        desc: 'MERN Project',
       },
       {
         icon: <FaCode />,
         title: 'Language : ',
-        desc: 'Adobe Photoshop',
+        desc: 'ReactJS & Node JS',
       },
       {
         icon: <FiExternalLink />,
         title: 'Preview : ',
-        desc: 'www.dribble.com',
+        desc: 'https://agency-656a8.web.app/',
       },
     ],
   },
@@ -283,27 +310,27 @@ export const portfolio = [
   {
     id: 2,
     img: Work2,
-    title: 'Website Design',
+    title: 'Aircnc',
     details: [
       {
         icon: <FiFileText />,
         title: 'Project : ',
-        desc: 'Website',
+        desc: 'Aircnc Website',
       },
       {
         icon: <FiUser />,
-        title: 'Client : ',
-        desc: 'Dribble',
+        title: 'Me : ',
+        desc: 'MERN Project',
       },
       {
         icon: <FaCode />,
         title: 'Language : ',
-        desc: 'React JS',
+        desc: 'React JS & Node JS',
       },
       {
         icon: <FiExternalLink />,
         title: 'Preview : ',
-        desc: 'www.dribble.com',
+        desc: 'https://aircnc-bf96b.web.app/',
       },
     ],
   },
@@ -311,27 +338,27 @@ export const portfolio = [
   {
     id: 3,
     img: Work3,
-    title: 'Video Editing',
+    title: 'CRUD',
     details: [
       {
         icon: <FiFileText />,
         title: 'Project : ',
-        desc: 'Video',
+        desc: 'CRUD Operation',
       },
       {
         icon: <FiUser />,
-        title: 'Client : ',
-        desc: 'Dribble',
+        title: 'ME : ',
+        desc: 'MERN project',
       },
       {
         icon: <FaCode />,
         title: 'Language : ',
-        desc: 'Adobe Premium',
+        desc: 'ReactJS & Node JS',
       },
       {
         icon: <FiExternalLink />,
         title: 'Preview : ',
-        desc: 'www.dribble.com',
+        desc: 'https://crud-operation-1171d.web.app/',
       },
     ],
   },
@@ -339,27 +366,27 @@ export const portfolio = [
   {
     id: 4,
     img: Work4,
-    title: 'Video Editing',
+    title: 'GYM',
     details: [
       {
         icon: <FiFileText />,
         title: 'Project : ',
-        desc: 'Video',
+        desc: 'GYM Website',
       },
       {
         icon: <FiUser />,
-        title: 'Client : ',
-        desc: 'Dribble',
+        title: 'Me : ',
+        desc: 'MERN Project',
       },
       {
         icon: <FaCode />,
         title: 'Language : ',
-        desc: 'Adobe Premium',
+        desc: 'ReactJS & Node JS',
       },
       {
         icon: <FiExternalLink />,
         title: 'Preview : ',
-        desc: 'www.dribble.com',
+        desc: 'https://gymwebsite-3a05f.web.app/',
       },
     ],
   },
@@ -367,23 +394,23 @@ export const portfolio = [
   {
     id: 5,
     img: Work5,
-    title: 'Landing Page',
+    title: 'E-commerce',
     details: [
       {
         title: 'Project : ',
-        desc: 'Website',
+        desc: 'E-commerce Website',
       },
       {
-        title: 'Client : ',
-        desc: 'Dribble',
+        title: 'ME : ',
+        desc: 'MERN Project',
       },
       {
         title: 'Language : ',
-        desc: 'React JS, Node JS',
+        desc: 'React JS & Node JS',
       },
       {
         title: 'Preview : ',
-        desc: 'www.dribble.com',
+        desc: 'https://ecommerce-webstore.netlify.app/',
       },
     ],
   },
@@ -391,27 +418,82 @@ export const portfolio = [
   {
     id: 6,
     img: Work6,
-    title: 'Photo Editing',
+    title: 'Udemy',
     details: [
       {
         icon: <FiFileText />,
         title: 'Project : ',
-        desc: 'Photo',
+        desc: 'Udemy Website',
       },
       {
         icon: <FiUser />,
-        title: 'Client : ',
-        desc: 'Dribble',
+        title: 'Me : ',
+        desc: 'MERN Project',
       },
       {
         icon: <FaCode />,
         title: 'Language : ',
-        desc: 'Adobe Photoshop',
+        desc: 'ReactJS & Node JS',
       },
       {
         icon: <FiExternalLink />,
         title: 'Preview : ',
-        desc: 'www.dibble.com',
+        desc: 'https://fakeudemy1.netlify.app/',
+      },
+    ],
+  },
+
+  {
+    id: 7,
+    img: Work7,
+    title: 'Doctors Portal',
+    details: [
+      {
+        icon: <FiFileText />,
+        title: 'Project : ',
+        desc: 'Doctor Website',
+      },
+      {
+        icon: <FiUser />,
+        title: 'Me : ',
+        desc: 'MERN',
+      },
+      {
+        icon: <FaCode />,
+        title: 'Language : ',
+        desc: 'ReactJS & Node JS',
+      },
+      {
+        icon: <FiExternalLink />,
+        title: 'Preview : ',
+        desc: 'https://doctors-portal-3a8a4.web.app/',
+      },
+    ],
+  },
+  {
+    id: 8,
+    img: Work8,
+    title: 'Resturent',
+    details: [
+      {
+        icon: <FiFileText />,
+        title: 'Project : ',
+        desc: 'Resturent Website',
+      },
+      {
+        icon: <FiUser />,
+        title: 'Me : ',
+        desc: 'MERN project',
+      },
+      {
+        icon: <FaCode />,
+        title: 'Language : ',
+        desc: 'ReactJS & Node JS',
+      },
+      {
+        icon: <FiExternalLink />,
+        title: 'Preview : ',
+        desc: 'https://resturentbd.netlify.app/',
       },
     ],
   },
