@@ -6,6 +6,7 @@ import Stats from "../../Components/Stats/Stats";
 import Skills from "../../Components/Skills/Skills";
 import { resume } from "../../data";
 import ResumeItem from "../../Components/ResumeItem/ResumeItem";
+import CV from "../../img/Md Abdul Aziz for MERN.pdf"
 
 
 function About() {
@@ -22,8 +23,8 @@ function About() {
             <ul className="info__list grid">
               <Info />
             </ul>
-            <a href="" className="button link">
-              Download CV{" "}
+            <a href={CV} className="button link" download="Md Abdul Aziz CV">
+              Download CV
               <span className="button__icon">
                 <FaDownload />
               </span>
